@@ -1,0 +1,28 @@
+{
+  "expo": {
+
+    "name": "Deco",
+    "scheme": "Deco", 
+    "androidStatusBar": {
+      "backgroundColor": "transparent",
+      "translucent": true,
+      "barStyle": "light-content"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "slug": "Deco",
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      
+      "newArchEnabled": true,
+      
+      
+      "EXPO_USE_NEW_ARCH": "true",  
+      
+      "router": {
+        "origin": false
+      }
+    }
+}}
