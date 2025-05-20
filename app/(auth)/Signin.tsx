@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Platform, StatusBar, Image, ImageBackground, SafeAreaView, } from 'react-native'
 import React from 'react'
 import { Dimensions } from 'react-native';
-import SignupForm  from './Components/SignupFom'
+import SignupForm  from './SignupFom'
 
 export default function Signin() {
   const screenHeight = Dimensions.get('window').height + (Platform.OS === 'android' ? StatusBar.currentHeight || 0 : 0);
@@ -11,23 +11,23 @@ export default function Signin() {
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.container}>
           <Image
-            source={require('../assets/images/camera.png')}
+            source={require('../../assets/images/camera.png')}
             style={styles.image}
             resizeMode='cover'
           />
           <Image
-            source={require('../assets/images/v9FQR4tbIq8.png')}
+            source={require('../../assets/images/v9FQR4tbIq8.png')}
             style={styles.image}
             resizeMode='cover'
           />
           
           <Image
-            source={require('../assets/images/MU3SIgq5Gpw.png')}
+            source={require('../../assets/images/MU3SIgq5Gpw.png')}
             style={styles.image}
             resizeMode='cover'
           />
           <Image
-            source={require('../assets/images/g6y5mm9Zby0.png')}
+            source={require('../../assets/images/g6y5mm9Zby0.png')}
             style={styles.image}
             resizeMode='cover'
           />
@@ -36,7 +36,7 @@ export default function Signin() {
 
       {/* Overlay image in front */}
       <ImageBackground 
-        source={require('../assets/images/splash.jpg')}
+        source={require('../../assets/images/splash.jpg')}
         style={[
           styles.overlay,
           { height: screenHeight }

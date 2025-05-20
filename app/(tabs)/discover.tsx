@@ -3,7 +3,7 @@ import { View, Text,ScrollView,StyleSheet,Platform,StatusBar,TextInput, Touchabl
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Stack } from 'expo-router';
-import Search from '../Components/Search';
+import Search from '../(app)/Components/Search';
 
 export default function homescreen() {
     const [searchText,setSearchText] = useState();
@@ -26,7 +26,7 @@ export default function homescreen() {
         },
     ]
   return (
-    <ScrollView style={styles.Container}>
+    <ScrollView style={styles.Container} showsVerticalScrollIndicator={false}>
         <Stack.Screen options={{ headerShown: false }} />
         <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
         <SafeAreaView>

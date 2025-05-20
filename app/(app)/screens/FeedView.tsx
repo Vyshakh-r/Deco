@@ -6,13 +6,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { useLocalSearchParams } from 'expo-router';
 import Posts from '../Components/PostsArray';
-import ViewIcon from '../../assets/images/icons/eye.svg';
-import CommentIcon from '../../assets/images/icons/active-chat.svg';
-import LikeIcon from '../../assets/images/icons/heart.svg';
-import BackIcon from '../../assets/images/icons/arrow-left.svg';
-import HeartIcon from '../../assets/images/icons/heart 2.svg';
-import PlusCircle from '../../assets/images/icons/plus-circle 2.svg'
-import UploadIcon from '../../assets/images/icons/upload.svg'
+import ViewIcon from '../../../assets/images/icons/eye.svg';
+import CommentIcon from '../../../assets/images/icons/active-chat.svg';
+import LikeIcon from '../../../assets/images/icons/heart.svg';
+import BackIcon from '../../../assets/images/icons/arrow-left.svg';
+import HeartIcon from '../../../assets/images/icons/heart 2.svg';
+import PlusCircle from '../../../assets/images/icons/plus-circle 2.svg'
+import UploadIcon from '../../../assets/images/icons/upload.svg'
 
 
 
@@ -94,7 +94,7 @@ export default function FeedView() {
          <View style={styles.Comment}>
             <View style={styles.commentImage}>
                 <Image
-                source={require('../../assets/images/Ellipse 192.png')}
+                source={require('../../../assets/images/Ellipse 192.png')}
                 />
             </View>
             <TouchableOpacity style={styles.commentInput} onPress={()=>gotoComments()}> 

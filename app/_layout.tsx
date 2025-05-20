@@ -1,5 +1,10 @@
 import { Slot } from 'expo-router';
+import { AuthProvider } from '../context/AuthContext';
 
 export default function Layout() {
-  return <Slot />; // Renders the component from index.tsx
-} 
+  return (
+    <AuthProvider>
+      <Slot /> 
+    </AuthProvider>
+  );
+}

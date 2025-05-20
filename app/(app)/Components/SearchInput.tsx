@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { TextInput, StyleSheet, View,Text,TouchableOpacity,Keyboard } from 'react-native';
-import SearchIcon from '../../assets/images/icons/active-Search.svg';
+import SearchIcon from '../../../assets/images/icons/active-Search.svg';
+import { useRouter } from 'expo-router';
 
 const SearchInput = () => {
   const [isFocused, setIsFocused] = useState(false);
   const [searchText, setSearchText] = useState('');
 
-  const  cancel=()=>{
-    isFocused==false
-  }
+  const router = useRouter();
 
   return (
     <View style={styles.Container}>
@@ -25,8 +24,10 @@ const SearchInput = () => {
     </View>
     <TouchableOpacity style={styles.Cancel} onPress={()=>{
           setSearchText('');
-          setIsFocused(false); // Reset border style
-          Keyboard.dismiss();  // Optional: Close keyboard
+          setIsFocused(false); 
+          Keyboard.dismiss();  
+          router.navigate('/(tabs)/homescreen')
+          
     }}>
       <Text style={styles.cancelText}>Cancel</Text>
     </TouchableOpacity>

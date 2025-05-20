@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet,ImageBackground,SafeAreaView,Platform,StatusBar,Image} from 'react-native';
 import { Dimensions } from 'react-native';
-import Button from './Components/Button';
+import Button from './(app)/Components/Button';
 
 
 

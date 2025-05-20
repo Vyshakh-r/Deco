@@ -2,11 +2,11 @@ import { View, Text, SafeAreaView,StyleSheet,Image,ScrollView, TouchableOpacity,
 import React, { useState } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import BackIcon from '../../assets/images/icons/arrow-left.svg';
-import EditIcon from '../../assets/images/icons/edit-square.svg'
+import BackIcon from '../../../assets/images/icons/arrow-left.svg';
+import EditIcon from '../../../assets/images/icons/edit-square.svg'
 import { LinearGradient } from 'expo-linear-gradient';
-import Heart from '../../assets/images/icons/heart.svg';
-import HeartActive from '../../assets/images/icons/activeheart.svg';
+import Heart from '../../../assets/images/icons/heart.svg';
+import HeartActive from '../../../assets/images/icons/activeheart.svg';
 
 
 export default function Comments() {
@@ -32,7 +32,7 @@ export default function Comments() {
             <View style={styles.CommentContainer}>
                 <View style={styles.flexContainer}>
                     <View>
-                        <Image source={require('../../assets/images/Ellipse 192.png')}/>
+                        <Image source={require('../../../assets/images/Ellipse 192.png')}/>
                     </View>
                     <View style={styles.marginLeft}>
                         <Text style={styles.profileName}>Bruno Pham</Text>
@@ -51,7 +51,7 @@ export default function Comments() {
             <View style={styles.CommentContainer}>
                 <View style={styles.flexContainer}>
                     <View>
-                        <Image source={require('../../assets/images/Ellipse 192.png')}/>
+                        <Image source={require('../../../assets/images/Ellipse 192.png')}/>
                     </View>
                     <View style={styles.marginLeft}>
                         <Text style={styles.profileName}>Bruno Pham</Text>
@@ -70,7 +70,7 @@ export default function Comments() {
             <View style={styles.CommentContainer}>
                 <View style={styles.flexContainer}>
                     <View>
-                        <Image source={require('../../assets/images/Ellipse 192.png')}/>
+                        <Image source={require('../../../assets/images/Ellipse 192.png')}/>
                     </View>
                     <View style={styles.marginLeft}>
                         <Text style={styles.profileName}>Bruno Pham</Text>

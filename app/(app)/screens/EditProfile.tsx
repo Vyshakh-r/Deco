@@ -2,7 +2,7 @@ import { View, Text,SafeAreaView,ScrollView,StyleSheet, ImageBackground, Touchab
 import React from 'react';
 import { Stack } from 'expo-router';
 import { useRouter } from 'expo-router';
-import BackIcon from '../../assets/images/icons/back icon.svg';
+import BackIcon from '../../../assets/images/icons/back icon.svg';
 import { LinearGradient } from 'expo-linear-gradient';
 
 
@@ -18,7 +18,7 @@ export default function profile() {
       <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
       <View style={styles.headerContainer}>
         <ImageBackground
-             source={require('../../assets/images/splash.jpg')}
+             source={require('../../../assets/images/splash.jpg')}
               style={styles.headerBackground}
            imageStyle={styles.headerImage}
              >
@@ -31,7 +31,7 @@ export default function profile() {
        </ImageBackground>
       <View style={styles.profileWrapper}>
         <Image
-        source={require('../../assets/images/userImagebig.png')}
+        source={require('../../../assets/images/userImagebig.png')}
         style={styles.profileImage}
          />
        </View>

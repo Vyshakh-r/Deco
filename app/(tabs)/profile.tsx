@@ -17,7 +17,7 @@ export default function profile() {
   const [isActive1,SetIsActive1]= useState(true);
   const router = useRouter();
   return (
-    <ScrollView style={styles.Container}>
+    <ScrollView style={styles.Container} showsVerticalScrollIndicator={false}>
       <Stack.Screen options={{ headerShown: false }} />
       <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
       <View style={styles.headerContainer}>
@@ -68,10 +68,10 @@ export default function profile() {
      </TouchableOpacity>
   </View>
   <View style={styles.userIntaractions}>
-    <TouchableOpacity style={styles.Titles} onPress={()=> {SetIsActive(true);SetIsActive1(false)}}>
+    <TouchableOpacity style={isActive ? styles.Titleactive :styles.Titles} onPress={()=> {SetIsActive(true);SetIsActive1(false)}}>
       <Text style={isActive ? styles.ActiveTitle : styles.Title }>200 shots</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.Titles2} onPress={()=> {SetIsActive1(true);SetIsActive(false)}}>
+    <TouchableOpacity style={isActive1 ? styles.Titleactive : styles.Titles} onPress={()=> {SetIsActive1(true);SetIsActive(false)}}>
      <Text style={isActive1 ?styles.ActiveTitle : styles.Title}>10 Collections</Text>
     </TouchableOpacity>
   </View>
@@ -327,23 +327,26 @@ const styles = StyleSheet.create({
     },
     userIntaractions:{
       marginTop:20,
-      flexDirection:'row',
-      paddingVertical:6,
       paddingHorizontal:10,
-      gap:80
+      paddingVertical:6,
+      width:'100%',
+      flexDirection:'row',
+      justifyContent:'space-between'
     },
     Title:{
       fontFamily:'Poppins',
       fontSize:16,
       fontWeight:500,
-      color:'#BDBDBD'
+      color:'#BDBDBD',
+      alignSelf:'center'
 
     },
     ActiveTitle:{
       fontFamily:'Poppins',
       fontSize:16,
       fontWeight:500,
-      color:'#5151C6'
+      color:'#5151C6',
+      alignSelf:'center'
     },
     CollectionContainer:{
       flexWrap:'wrap',
@@ -417,6 +420,26 @@ const styles = StyleSheet.create({
       height:155,
       width:155,
     },
+    Titles:{
+      width:'50%',
+      justifyContent:'center',
+      paddingVertical:10,
+      paddingHorizontal:4,
+      gap:10,
+      borderRadius:6,
+      display:'flex'
+
+    },
+    Titleactive:{
+      width:'50%',
+      justifyContent:'center',
+      alignContent:"center",
+      paddingVertical:10,
+      paddingHorizontal:4,
+      gap:10,
+      borderRadius:6,
+      backgroundColor:"#F1F1FE"
+    }
 
 
     

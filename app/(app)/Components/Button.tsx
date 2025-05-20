@@ -15,7 +15,7 @@ export default function Button() {
         const checkLoginStatus = async () => {
           const storedUser = await AsyncStorage.getItem('userData');
           if (storedUser) {
-            router.replace('/(tabs)/homescreen');
+            router.replace('/(tabs)/Homescreen');
           } else {
             router.replace('/Signin'); // or stay on onboarding/login
           }

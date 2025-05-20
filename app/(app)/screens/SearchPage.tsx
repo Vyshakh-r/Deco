@@ -15,9 +15,9 @@ export default function SearchPage() {
       <View style={styles.cardsContainer}>
      
        <TouchableOpacity style={styles.Cards}>
-        <ImageBackground style={styles.CardBg} source={require('../../assets/images/cardBg.png') } resizeMode='cover'>
+        <ImageBackground style={styles.CardBg} source={require('../../../assets/images/cardBg.png') } resizeMode='cover'>
           <Image
-           source={require('../../assets/images/mj2NwYH3wBA.png')}
+           source={require('../../../assets/images/mj2NwYH3wBA.png')}
            style={styles.cardImage}
            />
             <View style={styles.TextContainer}>
@@ -29,9 +29,9 @@ export default function SearchPage() {
       <View style={styles.cardsContainer}>
      
        <TouchableOpacity style={styles.Cards}>
-        <ImageBackground style={styles.CardBg} source={require('../../assets/images/cardBg.png') } resizeMode='cover'>
+        <ImageBackground style={styles.CardBg} source={require('../../../assets/images/cardBg.png') } resizeMode='cover'>
           <Image
-           source={require('../../assets/images/CdmpFw9vrX0.png')}
+           source={require('../../../assets/images/CdmpFw9vrX0.png')}
            style={styles.cardImage}
            />
             <View style={styles.TextContainer}>
@@ -43,9 +43,9 @@ export default function SearchPage() {
       <View style={styles.cardsContainer}>
      
      <TouchableOpacity style={styles.Cards}>
-      <ImageBackground style={styles.CardBg} source={require('../../assets/images/cardBg.png') } resizeMode='cover'>
+      <ImageBackground style={styles.CardBg} source={require('../../../assets/images/cardBg.png') } resizeMode='cover'>
         <Image
-         source={require('../../assets/images/Card4.png')}
+         source={require('../../../assets/images/Card4.png')}
          style={styles.cardImage}
          />
           <View style={styles.TextContainer}>
@@ -57,9 +57,9 @@ export default function SearchPage() {
     <View style={styles.cardsContainer}>
      
      <TouchableOpacity style={styles.Cards}>
-      <ImageBackground style={styles.CardBg} source={require('../../assets/images/cardBg.png') } resizeMode='cover'>
+      <ImageBackground style={styles.CardBg} source={require('../../../assets/images/cardBg.png') } resizeMode='cover'>
         <Image
-         source={require('../../assets/images/Card5.png')}
+         source={require('../../../assets/images/Card5.png')}
          style={styles.cardImage}
          />
           <View style={styles.TextContainer}>

@@ -2,7 +2,7 @@ import { View, Text,StatusBar,StyleSheet,ScrollView, TouchableOpacity,Image} fro
 import React from 'react'
 import { Stack } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context';
-import FollowButton from '../Components/FollowButton'
+import FollowButton from '../(app)/Components/FollowButton'
 
 export default function activity() {
   return (

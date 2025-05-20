@@ -3,26 +3,20 @@ import React from 'react';
 import { Stack } from 'expo-router';
 import { useRouter } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import EditIcon from '../../assets/images/icons/editWhite.svg';
-import ArrowIcon from '../../assets/images/icons/chevron-right.svg';
-import LogoutIcon from '../../assets/images/icons/logout.svg'
+import EditIcon from '../../../assets/images/icons/editWhite.svg';
+import ArrowIcon from '../../../assets/images/icons/chevron-right.svg';
+import LogoutIcon from '../../../assets/images/icons/logout.svg'
 
 export default function Settings() {
-    const links = [
-        { label: 'Gmail', url: 'https://www.gmail.com' },
-        { label: 'Instagram', url: 'https://www.instagram.com' },
-        { label: 'Twitter', url: 'https://www.twitter.com' },
-        { label: 'Google', url: 'https://www.google.com' },
-      ];
       const router = useRouter();
   return (
-    <ImageBackground style={styles.Container} source={require('../../assets/images/splash.jpg')} blurRadius={14}>
+    <ImageBackground style={styles.Container} source={require('../../../assets/images/splash.jpg')} blurRadius={14}>
         <Stack.Screen options={{ headerShown: false }} />
         <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
         <SafeAreaView style={styles.ContentContainer}>
             <View style={styles.userInfo}>
                 <Image
-                source={require('../../assets/images/UserProfile.png')} 
+                source={require('../../../assets/images/UserProfile.png')} 
                 />
                 <View style={styles.userMail}>
                     <Text style={styles.userName}>Bruno Pham</Text>

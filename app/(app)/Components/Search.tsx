@@ -1,7 +1,7 @@
 import { View, Text,StyleSheet, TouchableOpacity} from 'react-native';
 import React from 'react';
-import SearchIcon from '../../assets/images/icons/active-Search.svg';
-import SendIcon from '../../assets/images/icons/send.svg';
+import SearchIcon from '../../../assets/images/icons/active-Search.svg';
+import SendIcon from '../../../assets/images/icons/send.svg';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
